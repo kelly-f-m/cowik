@@ -12,5 +12,10 @@ def character_info(name):
     data = tibiadata.get_character_info(name)
     return data
 
+@app.route('/guildinfo/<string:name>', methods=['GET'])
+def guild_info(name):
+    data = tibiadata.get_guild_info(name)
+    return data
+
 if __name__ == "__main__": 
     app.run(debug=True)
