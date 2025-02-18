@@ -1,5 +1,6 @@
 from flask import Flask
 import tibiadata
+import utils
 
 app = Flask(__name__)
 
@@ -15,7 +16,12 @@ def character_info(name):
 @app.route('/guildinfo/<string:name>', methods=['GET'])
 def guild_info(name):
     data = tibiadata.get_guild_info(name)
-    return data
+    
+
+@app.route('/rashid', methods=['GET'])
+def rashid():
+    result = utils.rashid()
+    return result
 
 if __name__ == "__main__": 
     app.run(debug=True)

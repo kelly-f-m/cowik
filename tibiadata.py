@@ -1,6 +1,7 @@
 import requests
 from utils import format_date
 
+# Endpoint dos Personagens
 def get_character_info(name):
     tibia_data_url = f"https://api.tibiadata.com/v4/character/{name}"
     
@@ -24,6 +25,7 @@ def get_character_info(name):
     
     return f"Character {name} doesn't exist."
 
+# Endpoint das Guildas
 def get_guild_info(name):
     tibia_guild_url = f"https://api.tibiadata.com/v4/guild/{name}"
 
@@ -59,3 +61,4 @@ def get_guild_info(name):
         return result
     
     return f"Guild {name} doesn't exist."
+
