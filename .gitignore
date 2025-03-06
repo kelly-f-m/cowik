@@ -1,1 +1,57 @@
-__pycache__
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+
+# Virtual environments
+venv/
+.env/
+*.env
+
+# IDEs and editors (e.g., VSCode, PyCharm)
+.vscode/
+.idea/
+
+# OS-specific files (macOS, Windows)
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Logs and temporary files
+*.log
+*.bak
+*.swp
+*.swo
+*.tmp
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+MANIFEST
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Coverage reports
+.coverage
+.coverage.*
+*.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+
+# Environment variables / secrets
+*.env
+*.env.*
+secrets.json
+
+# SQLite database
+*.sqlite3
+
+# FastAPI specific (if using Uvicorn or other FastAPI servers)
+*.pid
+*.sock
